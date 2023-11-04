@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.contact-section {
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+  padding: 120px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 1000px;
+  
+  margin: 0 auto;
+  background-color: lemonchiffon;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid r;
+  border-radius: 4px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+    </style>
+</head>
+<body>
+    <section id="contact" class="contact-section">
+        <div class="container">
+          <h2>Contact US</h2>
+          <h2>Feel free to get in touch with us.</h2>
+          <form action="https://formsubmit.co/suhinathan446@gmail.com" method="POST">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+              </div>
+              <div class="col-md-12 text-center my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="col-md-12 text-center">
+                <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+</body>
+</html>
